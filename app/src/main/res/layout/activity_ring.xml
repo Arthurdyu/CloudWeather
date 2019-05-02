@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/alarmbg"
+    tools:context=".RingActivity">
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:format12Hour="HH:mm"
+        android:format24Hour="HH:mm"
+        android:layout_gravity="center"
+        android:textSize="60dp"
+        android:textColor="#fff"
+        tools:targetApi="jelly_bean_mr1" />
+
+    <TextView
+        android:id="@+id/txt_Alarm"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:textColor="#fff"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="380dp"
+        android:text="关闭提醒"
+        android:onClick="stop"/>
+
+</LinearLayout>
